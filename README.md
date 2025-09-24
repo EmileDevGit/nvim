@@ -4,20 +4,6 @@ but I love to share what I learn with others.
 
 This config includes some lsp / linter / formatter. It's mainly a configurable developpment environnment for nvim. Checkout the `main` branch to try out the basic build.
 
-## Plugins
-This config contains the following plugins
-
-| Plugin | Description |
-|--------|-------------|
-| Lazy.nvim|Plugin manager|
-| alpha-vim|Nvim splash screen|
-| catppuccin|Sets the colorscheme|
-| Mason / nvim-lsp / lspconfig | Trio of plugins managin the different lsp and formatters / linters|
-| lualine| Pretty line at the bottom of your screen|
-| neo-tree| Toggleable file tree for the pwd |
-| telescope.nvim| Displays the Live Grep and Find File for the pwd |
-| nvim-treesitter| Highlights code syntax like [ { ( ) } ] |
-
 ## Dependencies
 Neovim 0.11+
 
@@ -31,6 +17,29 @@ Python to enable `pyls`: `sudo pacman -Sy install python3`
 npm to install some lsps / formatters / linters: `sudo pacman -Sy install npm`
 
 Check :Mason and :MasonLog for additionnal info if some errors occur.
+
+## Installation
+Clone this repo in `/~/.config/`
+
+Launch `nvim`
+
+Voilà!
+
+To uninstall, simply remove the `/~/.config/nvim/` directory.
+
+## Plugins
+This config contains the following plugins
+
+| Plugin | Description |
+|--------|-------------|
+| Lazy.nvim|Plugin manager|
+| alpha-vim|Nvim splash screen|
+| catppuccin|Sets the colorscheme|
+| Mason / nvim-lsp / lspconfig | Trio of plugins managin the different lsp and formatters / linters|
+| lualine| Pretty line at the bottom of your screen|
+| neo-tree| Toggleable file tree for the pwd |
+| telescope.nvim| Displays the Live Grep and Find File for the pwd |
+| nvim-treesitter| Highlights code syntax like [ { ( ) } ] |
 
 ## Keybinds
 Some basic keybinds / keymaps to know in this setup, all executed in "Normal" mode
