@@ -36,11 +36,11 @@ Some basic keybinds / keymaps to know in this setup, all executed in "Normal" mo
 
 |Keybind| Description|
 |---|---|
-|<leader>nvim| Set the pwd to /~/.config/nvim |
-|<C-n>| Toggle the file tree on the right |
-|<C-p>| Fuzzy find a file in the pwd |
-|<leader>fg | Live Grep through files in the pwd |
-|<C-w> |Switch between the editor window and the file tree |
-|<leader>ff | Format the current file |
+|&lt;leader>nvim| Set the pwd to /~/.config/nvim |
+|&lt;C-n&gt;| Toggle the file tree on the right |
+|&lt;C-p&gt;| Fuzzy find a file in the pwd |
+|&lt;leader&gt;fg | Live Grep through files in the pwd |
+|&lt;C-w&gt; |Switch between the editor window and the file tree |
+|&lt;leader&gt;ff | Format the current file |
 
 
