@@ -1,46 +1,52 @@
-# Emldev's config
-This is my base config for Neovim, I'm no expert as I'm currently learning the basics
+# Emldev's developpment config
+This is my developpment config for Neovim, I'm no expert as I'm currently learning the basics
 but I love to share what I learn with others.
+
+This config includes some lsp / linter / formatter. It's mainly a configurable developpment environnment for nvim. Checkout the `main` branch to try out the basic build.
 
 ## Plugins
 This config contains the following plugins
 
 | Plugin | Description |
 |--------|-------------|
-| alpha_vim|Nvim splash screen|
+| Lazy.nvim|Plugin manager|
+| alpha-vim|Nvim splash screen|
 | catppuccin|Sets the colorscheme|
-| Mason / nvim_lsp / lspconfig | Manages with the language servers|
+| Mason / nvim-lsp / lspconfig | Trio of plugins managin the different lsp and formatters / linters|
 | lualine| Pretty line at the bottom of your screen|
 | neo-tree| Toggleable file tree for the pwd |
-| none-ls| Manages linters and formatters |
-| telescope| Displays the Live Grep and Find File for the pwd |
-| treesitter| Highlights code syntax like [ { ( ) } ] |
+| telescope.nvim| Displays the Live Grep and Find File for the pwd |
+| nvim-treesitter| Highlights code syntax like [ { ( ) } ] |
 
 ## Dependencies
 Neovim 0.11+
 
-The following commands are ran on Arch using the pacman package manager,
+The following commands are ran on `Arch` using the `pacman` package manager,
 adapt them for your system.
 
-C compiler for lua: `sudo pacman -Sy install base-devel`
+C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
 
-By default language servers are commented out, uncomment the ones
-you need. You then might need additional dependencies:
+Python to enable `pyls`: `sudo pacman -Sy install python3`
 
-npm to install some lsps through Mason: `sudo pacman -Sy install npm`
+npm to install some lsps / formatters / linters: `sudo pacman -Sy install npm`
 
-python3 to install the pylsp `sudo pacman -Sy install python3`
+Check :Mason and :MasonLog for additionnal info if some errors occur.
 
 ## Keybinds
 Some basic keybinds / keymaps to know in this setup, all executed in "Normal" mode
 
 |Keybind| Description|
 |---|---|
-|&lt;leader>nvim| Set the pwd to /~/.config/nvim |
-|&lt;C-n&gt;| Toggle the file tree on the right |
-|&lt;C-p&gt;| Fuzzy find a file in the pwd |
-|&lt;leader&gt;fg | Live Grep through files in the pwd |
-|&lt;C-w&gt; |Switch between the editor window and the file tree |
-|&lt;leader&gt;ff | Format the current file |
+|`<leader>`nvim| Set the pwd to /~/.config/nvim |
+|`<C-n>`| Toggle the file tree on the right |
+|`<C-p>`| Fuzzy find a file in the pwd |
+|`<leader>`fg | Live Grep through files in the pwd |
+|`<C-w>`|Switch between the editor window and the file tree |
+|`<leader>`ff | Format the current file |
 
+## How does it work?
+Basically, Neovim has a lua runtime in the background enabling us to execute code.
 
+Using the Lazyvim framework, the `init.lua` file is read and fetches a list of plugins to install.
+
+It does so by adding up each return statement within the files under `.../lua/plugins/`
