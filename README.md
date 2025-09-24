@@ -21,6 +21,11 @@ Voilà!
 
 To uninstall, simply remove the `/~/.config/nvim/` directory.
 
+## Screenshots
+![splashscreen](screenshots/splashscreen.png)
+![code](screenshots/code.png)
+
+
 ## Plugins
 This config contains the following plugins
 
