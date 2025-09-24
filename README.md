@@ -50,3 +50,8 @@ Basically, Neovim has a lua runtime in the background enabling us to execute cod
 Using the Lazyvim framework, the `init.lua` file is read and fetches a list of plugins to install.
 
 It does so by adding up each return statement within the files under `.../lua/plugins/`
+
+## Sources
+For the majority of the basics, I followed the great teachings of typecraft_dev on youtube.
+
+He has a great [playlist](https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn) explaining really well each steps.
