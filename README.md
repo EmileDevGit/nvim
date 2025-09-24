@@ -4,6 +4,23 @@ but I love to share what I learn with others.
 
 This is the basic config, it doesn't include any lsp / linter / formatter. It's mainly a quality of life basic setup for nvim. Checkout the `dev` branch to try out my current developpment build.
 
+## Dependencies
+Neovim 0.11+
+
+The following commands are ran on `Arch` using the `pacman` package manager,
+adapt them for your system.
+
+C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
+
+## Installation
+Clone this repo in `/~/.config/`
+
+Launch `nvim`
+
+Voilà!
+
+To uninstall, simply remove the `/~/.config/nvim/` directory.
+
 ## Plugins
 This config contains the following plugins
 
@@ -17,14 +34,6 @@ This config contains the following plugins
 | telescope.nvim| Displays the Live Grep and Find File for the pwd |
 | nvim-treesitter| Highlights code syntax like [ { ( ) } ] |
 
-## Dependencies
-Neovim 0.11+
-
-The following commands are ran on `Arch` using the `pacman` package manager,
-adapt them for your system.
-
-C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
-
 ## Keybinds
 Some basic keybinds / keymaps to know in this setup, all executed in "Normal" mode
 
@@ -35,7 +44,6 @@ Some basic keybinds / keymaps to know in this setup, all executed in "Normal" mo
 |`<C-p>`| Fuzzy find a file in the pwd |
 |`<leader>`fg | Live Grep through files in the pwd |
 |`<C-w>`|Switch between the editor window and the file tree |
-|`<leader>`ff | Format the current file |
 
 ## How does it work?
 Basically, Neovim has a lua runtime in the background enabling us to execute code.
