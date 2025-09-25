@@ -12,6 +12,8 @@ adapt them for your system.
 
 C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
 
+Any decent nerd-fonts, I use `ttf-jetbrain-mono-nerd`
+
 ## Installation
 Clone this repo in `/~/.config/`
 
