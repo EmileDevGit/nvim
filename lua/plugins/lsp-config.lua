@@ -18,7 +18,7 @@ return {
 					-- "sqlls",
 					-- "kotlin_lsp",
 					-- "laravel_ls",
-					-- "jsonls",
+					 "jsonls",
 					-- "java_language_server",
 					-- "intelephense",
 					-- "hyprls",
@@ -44,7 +44,7 @@ return {
 			-- vim.lsp.enable("sqlls")
 			-- vim.lsp.enable("kotlin_lsp")
 			-- vim.lsp.enable("laravel_ls")
-			-- vim.lsp.enable("jsonls")
+			 vim.lsp.enable("jsonls")
 			-- vim.lsp.enable("java_language_server")
 			-- vim.lsp.enable("intelephense")
 			-- vim.lsp.enable("hyprls")
