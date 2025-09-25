@@ -10,6 +10,8 @@ Neovim 0.11+
 The following commands are ran on `Arch` using the `pacman` package manager,
 adapt them for your system.
 
+Any decent nerd-fonts package, I use `ttf-jetbrains-mono-nerd`
+
 C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
 
 Python to enable `pyls`: `sudo pacman -Sy install python3`
