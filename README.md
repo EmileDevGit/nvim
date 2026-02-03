@@ -12,11 +12,11 @@ adapt them for your system.
 
 Any decent nerd-fonts package, I use `ttf-jetbrains-mono-nerd`
 
-C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
+C compiler for lua ( usually included in basics package ): `sudo pacman -Syu --needed base-devel`
 
-Python to enable `pyls`: `sudo pacman -Sy install python3`
+Python to enable `pyls`: `sudo pacman -Syu python3`
 
-npm to install some lsps / formatters / linters: `sudo pacman -Sy install npm`
+npm to install some lsps / formatters / linters: `sudo pacman -Syu npm`
 
 Check :Mason and :MasonLog for additionnal info if some errors occur.
 
