@@ -10,7 +10,7 @@ Neovim 0.11+
 The following commands are ran on `Arch` using the `pacman` package manager,
 adapt them for your system.
 
-C compiler for lua ( usually included in basics package ): `sudo pacman -Sy install --needed base-devel`
+C compiler for lua ( usually included in basics package ): `sudo pacman -Syu --needed base-devel`
 
 Any decent nerd-fonts, I use `ttf-jetbrain-mono-nerd`
 
